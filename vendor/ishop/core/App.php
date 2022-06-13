@@ -14,9 +14,10 @@ class App {
         session_start();
         self::$app = Registry::instance();
         $this->getParams();
-
+        var_dump($query);
         new ErorHandler();
-//        Router::dispatch($query);
+        Router::dispatch($query);
+
 
     }
 
